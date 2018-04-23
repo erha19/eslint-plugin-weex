@@ -7,7 +7,7 @@
 // ------------------------------------------------------------------------------
 // Requirements
 // ------------------------------------------------------------------------------
-const rule = require('../../../../lib/rules/weex/no-window')
+const rule = require('../../../../lib/rules/weex/no-global')
 const RuleTester = require('eslint').RuleTester
 const parserOptions = {
     ecmaVersion: 6,
@@ -20,7 +20,7 @@ const parserOptions = {
   // Tests
   // ------------------------------------------------------------------------------
 const ruleTester = new RuleTester()
-ruleTester.run('no-window', rule, {
+ruleTester.run('no-global', rule, {
   valid: [{
     filename: 'test.vue',
     code: '',
@@ -40,18 +40,18 @@ ruleTester.run('no-window', rule, {
       export default {
         methods: {
           open: function() {
-            window.open('about:blank')
+            global.require()
           },
           test1: {
             test2: function() {
-              window.open('about:blank')
+              global.require()
             }
           }
         }
       }
       `,
     parserOptions,
-    errors: [`window api is invalid in weex.`, `window api is invalid in weex.`]
+    errors: [`global api is invalid in weex.`, `global api is invalid in weex.`]
   }, {
     filename: 'test.vue',
     code: `
@@ -62,7 +62,7 @@ ruleTester.run('no-window', rule, {
               test3: {
                 test4: {
                   test5: function() {
-                    window.open('about:blank')
+                    global.require()
                   }
                 }
               }
@@ -72,6 +72,6 @@ ruleTester.run('no-window', rule, {
       }
       `,
     parserOptions,
-    errors: [`window api is invalid in weex.`]
+    errors: [`global api is invalid in weex.`]
   }]
 })

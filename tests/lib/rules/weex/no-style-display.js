@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 
 const RuleTester = require('eslint').RuleTester
-const rule = require('../../../../lib/rules/weex/no-style-float')
+const rule = require('../../../../lib/rules/weex/no-style-display')
 const parserOptions = {
   ecmaVersion: 6,
   sourceType: 'module'
@@ -26,7 +26,7 @@ const tester = new RuleTester({
   }
 })
 
-tester.run('no-style-float', rule, {
+tester.run('no-style-display', rule, {
   valid: [{
     filename: 'test.vue',
     code: `
@@ -60,67 +60,65 @@ tester.run('no-style-float', rule, {
     code: `
       <template>
           <div>
-              <router-view class="r-box" v-html={{}}></router-view>
-              <image style="float:left; width:881px; hieght:45px" resize="cover" :src="i.img"></image>
+              <image style="display:none; width:881px; hieght:45px" resize="cover" :src="i.img"></image>
           </div>
       </template>
       <style>
         .child{
-            float:left;
+            display:none;
         }
       </style>
           `,
     parserOptions,
     errors: [{
-      message: "Style 'float' is not support in weex.",
+      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
       line: 2
     }, {
-      message: "Style 'float' is not support in weex.",
-      line: 5
+      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
+      line: 4
     }]
   }, {
     filename: 'test.vue',
     code: `
       <template>
           <div>
-              <router-view class="r-box" v-html={{}}></router-view>
-              <image style="float:letf; width:760px;" resize="cover" :src="./i.img"/>
+              <image style="display:none; width:760px;" resize="cover" :src="./i.img"/>
           </div>
       </template>
           `,
     parserOptions,
-    errors: ["Style 'float' is not support in weex."]
+    errors: ["Style 'display' is not support in weex, you need to use flex for style layout."]
   }, {
     filename: 'test.vue',
     code: `
     <template>
         <div>
-            <image style="height:300px; float : left;  width:450px;" resize="cover" :src="i.img"></image>
+            <image style="height:300px; display:none;  width:450px;" resize="cover" :src="i.img"></image>
         </div>
     </template>
           `,
     parserOptions,
-    errors: ["Style 'float' is not support in weex."]
+    errors: ["Style 'display' is not support in weex, you need to use flex for style layout."]
   }, {
     filename: 'test.vue',
     code: `
     <template>
         <div>
-            <image style="height:320px;float : 111" resize="cover" :src="i.img"></image>
+            <image style="height:320px;display:none;" resize="cover" :src="i.img"></image>
         </div>
     </template>
     <style>
         .child{
-            float:left;
+            display:none;
         }
     </style>
           `,
     parserOptions,
     errors: [{
-      message: "Style 'float' is not support in weex.",
+      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
       line: 2
     }, {
-      message: "Style 'float' is not support in weex.",
+      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
       line: 4
     }]
   }]

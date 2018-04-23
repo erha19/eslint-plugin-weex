@@ -159,11 +159,13 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [vue/valid-v-pre](./docs/rules/valid-v-pre.md) | enforce valid `v-pre` directives |
 |  | [vue/valid-v-show](./docs/rules/valid-v-show.md) | enforce valid `v-show` directives |
 |  | [vue/valid-v-text](./docs/rules/valid-v-text.md) | enforce valid `v-text` directives |
+|  | [vue/weex/no-document](./docs/rules/weex/no-document.md) | document api is invalid in weex. |
+|  | [vue/weex/no-global](./docs/rules/weex/no-global.md) | global api is invalid in weex. |
 |  | [vue/weex/no-style-float](./docs/rules/weex/no-style-float.md) | disallow use `float` in style |
 |  | [vue/weex/no-v-cloak](./docs/rules/weex/no-v-cloak.md) | disallow use `v-cloak` directives |
 |  | [vue/weex/no-v-html](./docs/rules/weex/no-v-html.md) | disallow use `v-html` directives |
 |  | [vue/weex/no-v-show](./docs/rules/weex/no-v-show.md) | disallow use `no-v-show` directive |
-|  | [vue/weex/no-window](./docs/rules/weex/no-window.md) | enforce props default values to be valid |
+|  | [vue/weex/no-window](./docs/rules/weex/no-window.md) | window api is invalid in weex. |
 |  | [vue/weex/no-z-index](./docs/rules/weex/no-z-index.md) | disallow use `z-index` in style |
 
 ### Priority B: Strongly Recommended (Improving Readability)
