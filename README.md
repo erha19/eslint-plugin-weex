@@ -160,13 +160,22 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [vue/valid-v-show](./docs/rules/valid-v-show.md) | enforce valid `v-show` directives |
 |  | [vue/valid-v-text](./docs/rules/valid-v-text.md) | enforce valid `v-text` directives |
 |  | [vue/weex/no-document](./docs/rules/weex/no-document.md) | document api is invalid in weex. |
-|  | [vue/weex/no-global](./docs/rules/weex/no-global.md) | global api is invalid in weex. |
-|  | [vue/weex/no-style-float](./docs/rules/weex/no-style-float.md) | disallow use `float` in style |
+|  | [vue/weex/no-global](./docs/rules/weex/no-global.md) | global api may not exist in weex. |
+|  | [vue/weex/no-style-display](./docs/rules/weex/no-style-display.md) | weex not support to use `display` in style |
+|  | [vue/weex/no-style-float](./docs/rules/weex/no-style-float.md) | weex not support to use `float` in style |
+|  | [vue/weex/no-style-z-index](./docs/rules/weex/no-style-z-index.md) | disallow use `z-index` in style |
 |  | [vue/weex/no-v-cloak](./docs/rules/weex/no-v-cloak.md) | disallow use `v-cloak` directives |
 |  | [vue/weex/no-v-html](./docs/rules/weex/no-v-html.md) | disallow use `v-html` directives |
 |  | [vue/weex/no-v-show](./docs/rules/weex/no-v-show.md) | disallow use `no-v-show` directive |
 |  | [vue/weex/no-window](./docs/rules/weex/no-window.md) | window api is invalid in weex. |
-|  | [vue/weex/no-z-index](./docs/rules/weex/no-z-index.md) | disallow use `z-index` in style |
+|  | [vue/weex/valid-cell-component](./docs/rules/weex/valid-cell-component.md) | weex `<cell>` component does not support margin-top/margin-bottom |
+|  | [vue/weex/valid-image-component](./docs/rules/weex/valid-image-component.md) | weex `<image>` component need style attributes of width and height |
+|  | [vue/weex/valid-list-component](./docs/rules/weex/valid-list-component.md) | valid `<list>` component |
+|  | [vue/weex/valid-picker-module](./docs/rules/weex/valid-picker-module.md) | valid module picker in weex. |
+|  | [vue/weex/valid-scroller-component](./docs/rules/weex/valid-scroller-component.md) | valid `<scroller>` component |
+|  | [vue/weex/valid-style-flex](./docs/rules/weex/valid-style-flex.md) | weex does not support all properties in the flex layout |
+|  | [vue/weex/valid-style-font-family](./docs/rules/weex/valid-style-font-family.md) | weex does not support multiple fonts in font-family |
+|  | [vue/weex/valid-style-selector](./docs/rules/weex/valid-style-selector.md) | valid css seletor used on the weex |
 
 ### Priority B: Strongly Recommended (Improving Readability)
 
