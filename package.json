@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-weex-vue",
-  "version": "1.0.0",
-  "description": "Official ESLint plugin for weex",
+  "version": "0.0.1",
+  "description": "Official ESLint plugin for Vue using in Weex",
   "main": "lib/index.js",
   "scripts": {
     "start": "npm run test:base -- --watch --growl",
@@ -17,7 +17,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/vuejs/eslint-plugin-weex-vue#readme",
+  "homepage": "https://github.com/erha19/eslint-plugin-weex-vue#readme",
   "keywords": [
     "eslint",
     "eslint-plugin",
@@ -26,14 +26,12 @@
     "vuejs",
     "rules"
   ],
-  "author": "Toru Nagashima (https://github.com/mysticatea)",
-  "contributors": [
-    "Michał Sajnóg <msajnog93@gmail.com> (http://github.com/michalsnik)"
-  ],
+  "author": "erha19 (https://github.com/erha19)",
+  "contributors": [],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/eslint-plugin-vue.git"
+    "url": "git+https://github.com/erha19/eslint-plugin-weex-vue.git"
   },
   "bugs": {
     "url": "https://github.com/vuejs/eslint-plugin-vue/issues"
