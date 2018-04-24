@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 
 const RuleTester = require('eslint').RuleTester
-const rule = require('../../../../lib/rules/weex/no-z-index')
+const rule = require('../../../../lib/rules/weex/no-style-z-index')
 const parserOptions = {
   ecmaVersion: 6,
   sourceType: 'module'
@@ -26,7 +26,7 @@ const tester = new RuleTester({
   }
 })
 
-tester.run('no-z-index', rule, {
+tester.run('no-style-z-index', rule, {
   valid: [{
     filename: 'test.vue',
     code: `

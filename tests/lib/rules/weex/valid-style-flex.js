@@ -63,8 +63,8 @@ tester.run('valid-style-flex', rule, {
   }],
   invalid: [
     {
-    filename: 'test.vue',
-    code: `
+      filename: 'test.vue',
+      code: `
     <template>
       <div style="
       flex: 1 1 auto;
@@ -81,15 +81,15 @@ tester.run('valid-style-flex', rule, {
       }
     </style>
           `,
-    parserOptions,
-    errors: [
-      "Style `flex: 1 1 auto` is not support, please use the style like `flex: Number`",
-      "Style `align-items: baseline` is not support, please use the style like `align-items: auto|flex-start|flex-end|center|stretch`",
-      "Style `align-self: baseline` is not support, please use the style like `align-self: auto|flex-start|flex-end|center|stretch`",
-      "Style `flex: 1 1 auto` is not support, please use the style like `flex: Number`",
-      "Style `align-items: baseline` is not support, please use the style like `align-items: auto|flex-start|flex-end|center|stretch`",
-      "Style `align-self: baseline` is not support, please use the style like `align-self: auto|flex-start|flex-end|center|stretch`"
-    ]},
+      parserOptions,
+      errors: [
+        'Style `flex: 1 1 auto` is not support, please use the style like `flex: Number`',
+        'Style `align-items: baseline` is not support, please use the style like `align-items: auto|flex-start|flex-end|center|stretch`',
+        'Style `align-self: baseline` is not support, please use the style like `align-self: auto|flex-start|flex-end|center|stretch`',
+        'Style `flex: 1 1 auto` is not support, please use the style like `flex: Number`',
+        'Style `align-items: baseline` is not support, please use the style like `align-items: auto|flex-start|flex-end|center|stretch`',
+        'Style `align-self: baseline` is not support, please use the style like `align-self: auto|flex-start|flex-end|center|stretch`'
+      ] },
     {
       filename: 'test.vue',
       code: `
@@ -115,6 +115,6 @@ tester.run('valid-style-flex', rule, {
         'Style `flex-shrink: 1` is not support, please use one of `[ flex-direction | justify-content | flex-wrap | flex | align-self | align-items]` to layout your page',
         'Style `flex-basis: baseline` is not support, please use one of `[ flex-direction | justify-content | flex-wrap | flex | align-self | align-items]` to layout your page',
         'Style `order: 10` is not support, please use one of `[ flex-direction | justify-content | flex-wrap | flex | align-self | align-items]` to layout your page'
-      ]}
+      ] }
   ]
 })

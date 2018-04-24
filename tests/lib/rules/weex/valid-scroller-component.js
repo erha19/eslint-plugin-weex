@@ -46,7 +46,7 @@ tester.run('valid-scroller-component', rule, {
         </scroller>
       </div>
     </template>`,
-      errors: ["Cannot use <list> component in <scroller> component"]
+      errors: ['Cannot use <list> component in <scroller> component.']
     }
   ]
 })

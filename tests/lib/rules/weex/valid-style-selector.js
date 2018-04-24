@@ -28,9 +28,9 @@ const tester = new RuleTester({
 
 tester.run('valid-style-selector', rule, {
   valid: [
-  {
-    filename: 'test.vue',
-    code: `
+    {
+      filename: 'test.vue',
+      code: `
       <template>
           <div></div>
       </template>
@@ -40,10 +40,10 @@ tester.run('valid-style-selector', rule, {
         }
       </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -53,10 +53,10 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -66,10 +66,10 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -79,10 +79,10 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -92,10 +92,10 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -105,10 +105,10 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }, {
-    filename: 'test.vue',
-    code: `
+      parserOptions
+    }, {
+      filename: 'test.vue',
+      code: `
     <template>
         <div></div>
     </template>
@@ -130,8 +130,8 @@ tester.run('valid-style-selector', rule, {
       }
     </style>
     `,
-    parserOptions
-  }
+      parserOptions
+    }
   ],
   invalid: [
     {
@@ -148,7 +148,7 @@ tester.run('valid-style-selector', rule, {
             `,
       parserOptions,
       errors: [{
-        message: "TypeSelector `div` is not support in weex now, please use ClassSelector.",
+        message: 'TypeSelector `div` is not support in weex now, please use ClassSelector.',
         line: 2
       }]
     },
@@ -166,7 +166,7 @@ tester.run('valid-style-selector', rule, {
             `,
       parserOptions,
       errors: [{
-        message: "IdSelector `child` is not support in weex now, please use ClassSelector.",
+        message: 'IdSelector `child` is not support in weex now, please use ClassSelector.',
         line: 2
       }]
     },
@@ -184,7 +184,7 @@ tester.run('valid-style-selector', rule, {
             `,
       parserOptions,
       errors: [{
-        message: "TypeSelector `*` is not support in weex now, please use ClassSelector.",
+        message: 'TypeSelector `*` is not support in weex now, please use ClassSelector.',
         line: 2
       }]
     },
@@ -202,11 +202,11 @@ tester.run('valid-style-selector', rule, {
             `,
       parserOptions,
       errors: [{
-        message: "TypeSelector `div` is not support in weex now, please use ClassSelector.",
+        message: 'TypeSelector `div` is not support in weex now, please use ClassSelector.',
         line: 2
       },
       {
-        message: "AttributeSelector `[object Object]` is not support in weex now, please use ClassSelector.",
+        message: 'AttributeSelector `[object Object]` is not support in weex now, please use ClassSelector.',
         line: 2
       }]
     },
@@ -224,9 +224,9 @@ tester.run('valid-style-selector', rule, {
             `,
       parserOptions,
       errors: [{
-        message: "PseudoClassSelector `hover` is not support in weex now, you can use :focus :active :disabled :enabled.",
+        message: 'PseudoClassSelector `hover` is not support in weex now, you can use :focus :active :disabled :enabled.',
         line: 2
       }]
-    } 
+    }
   ]
 })

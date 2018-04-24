@@ -68,7 +68,7 @@ tester.run('valid-image-component', rule, {
 
       }
     </style>`,
-      errors: ["The style attributes of width and height must be specified in image component, otherwise it won’t work."]
+      errors: ['The style attributes of width and height must be specified in image component, otherwise it won’t work.']
     },
     {
       filename: 'test.vue',
@@ -77,7 +77,7 @@ tester.run('valid-image-component', rule, {
       <image style="" src="https://vuejs.org/images/logo.png"></image>
       </div>
     </template>`,
-      errors: ["The style attributes of width and height must be specified in image component, otherwise it won’t work."]
+      errors: ['The style attributes of width and height must be specified in image component, otherwise it won’t work.']
     }
   ]
 })

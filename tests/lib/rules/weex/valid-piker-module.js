@@ -10,15 +10,15 @@
 const rule = require('../../../../lib/rules/weex/valid-picker-module')
 const RuleTester = require('eslint').RuleTester
 const parserOptions = {
-    ecmaVersion: 6,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    },
-    sourceType: 'module'
-  }
-  // ------------------------------------------------------------------------------
-  // Tests
-  // ------------------------------------------------------------------------------
+  ecmaVersion: 6,
+  ecmaFeatures: {
+    experimentalObjectRestSpread: true
+  },
+  sourceType: 'module'
+}
+// ------------------------------------------------------------------------------
+// Tests
+// ------------------------------------------------------------------------------
 const ruleTester = new RuleTester()
 ruleTester.run('valid-picker-module', rule, {
   valid: [{
@@ -33,7 +33,7 @@ ruleTester.run('valid-picker-module', rule, {
       }
       `,
     parserOptions
-  },{
+  }, {
     filename: 'test.vue',
     code: `
       const picker = weex.requireModule('picker')
@@ -54,7 +54,7 @@ ruleTester.run('valid-picker-module', rule, {
       }
       `,
     parserOptions
-  },{
+  }, {
     filename: 'test.vue',
     code: `
       export default {
@@ -74,7 +74,7 @@ ruleTester.run('valid-picker-module', rule, {
       }
       `,
     parserOptions
-  },{
+  }, {
     filename: 'test.vue',
     code: `
       const picker = weex.requireModule('picker')
@@ -98,9 +98,9 @@ ruleTester.run('valid-picker-module', rule, {
     parserOptions
   }],
   invalid: [
-  {
-    filename: 'test.vue',
-    code: `
+    {
+      filename: 'test.vue',
+      code: `
       const picker = weex.requireModule('picker')
       export default {
         methods: {
@@ -115,12 +115,12 @@ ruleTester.run('valid-picker-module', rule, {
         }
       }
       `,
-    parserOptions,
-    errors: [`Module \`picker\` needs callback function.`, `Module \`picker\` needs callback function.`]
-  }, 
-  {
-    filename: 'test.vue',
-    code: `
+      parserOptions,
+      errors: [`Module \`picker\` needs callback function.`, `Module \`picker\` needs callback function.`]
+    },
+    {
+      filename: 'test.vue',
+      code: `
         const picker = weex.requireModule('picker')
         export default {
           methods: {
@@ -138,12 +138,12 @@ ruleTester.run('valid-picker-module', rule, {
           }
         }
         `,
-    parserOptions,
-    errors: [`Module \`picker\` needs callback function.`]
-  },
-  {
-    filename: 'test.vue',
-    code: `
+      parserOptions,
+      errors: [`Module \`picker\` needs callback function.`]
+    },
+    {
+      filename: 'test.vue',
+      code: `
         const picker = weex.requireModule('picker')
         export default {
           methods: {
@@ -161,8 +161,8 @@ ruleTester.run('valid-picker-module', rule, {
           }
         }
         `,
-    parserOptions,
-    errors: [`Module \`picker\` needs callback function.`]
-  }
+      parserOptions,
+      errors: [`Module \`picker\` needs callback function.`]
+    }
   ]
 })

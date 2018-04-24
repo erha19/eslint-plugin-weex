@@ -69,6 +69,6 @@ tester.run('valid-style-font-family', rule, {
       errors: [
         'Style `font-family` is not support multiple fonts, please use the style like `font-family: sans-serif;`',
         'Style `font-family` is not support multiple fonts, please use the style like `font-family: sans-serif;`'
-      ]}
+      ] }
   ]
 })

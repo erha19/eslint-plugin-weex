@@ -10,15 +10,15 @@
 const rule = require('../../../../lib/rules/weex/no-global')
 const RuleTester = require('eslint').RuleTester
 const parserOptions = {
-    ecmaVersion: 6,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    },
-    sourceType: 'module'
-  }
-  // ------------------------------------------------------------------------------
-  // Tests
-  // ------------------------------------------------------------------------------
+  ecmaVersion: 6,
+  ecmaFeatures: {
+    experimentalObjectRestSpread: true
+  },
+  sourceType: 'module'
+}
+// ------------------------------------------------------------------------------
+// Tests
+// ------------------------------------------------------------------------------
 const ruleTester = new RuleTester()
 ruleTester.run('no-global', rule, {
   valid: [{

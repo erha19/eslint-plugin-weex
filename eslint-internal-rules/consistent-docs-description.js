@@ -8,7 +8,9 @@
 const ALLOWED_FIRST_WORDS = [
   'enforce',
   'require',
-  'disallow'
+  'disallow',
+  'valid',
+  'weex'
 ]
 
 // ------------------------------------------------------------------------------

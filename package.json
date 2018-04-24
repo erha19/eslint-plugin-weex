@@ -1,12 +1,12 @@
 {
-  "name": "eslint-plugin-vue",
+  "name": "eslint-plugin-weex-vue",
   "version": "1.0.0",
-  "description": "Official ESLint plugin for Vue.js",
+  "description": "Official ESLint plugin for weex",
   "main": "lib/index.js",
   "scripts": {
     "start": "npm run test:base -- --watch --growl",
     "test:base": "mocha \"tests/lib/**/*.js\" --reporter dot",
-    "test:target": "mocha \"tests/lib/rules/weex/no-window.js\"",
+    "test:target": "mocha \"tests/lib/**/*.js\"",
     "test": "nyc npm run test:base -- \"tests/integrations/*.js\" --timeout 60000",
     "lint": "eslint . --rulesdir eslint-internal-rules",
     "pretest": "npm run lint",
@@ -17,7 +17,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/vuejs/eslint-plugin-vue#readme",
+  "homepage": "https://github.com/vuejs/eslint-plugin-weex-vue#readme",
   "keywords": [
     "eslint",
     "eslint-plugin",
