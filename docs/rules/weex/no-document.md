@@ -1,4 +1,4 @@
-# document api is invalid in weex. (vue/weex/no-document)
+# disallow document api is invalid in weex (vue/weex/no-document)
 
 - :gear: This rule is included in all of `"plugin:vue/essential"`, `"plugin:vue/strongly-recommended"` and `"plugin:vue/recommended"`.
 

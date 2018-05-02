@@ -1,4 +1,4 @@
-# window api is invalid in weex. (vue/weex/no-window)
+# disallow window api is invalid in weex (vue/weex/no-window)
 
 - :gear: This rule is included in all of `"plugin:vue/essential"`, `"plugin:vue/strongly-recommended"` and `"plugin:vue/recommended"`.
 

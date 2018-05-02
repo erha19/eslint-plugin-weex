@@ -7,7 +7,7 @@
     "parser": "vue-eslint-parser",
     "plugins": [
         "import",
-        "vue"
+        "weex"
     ],
     "rules": {
         "import/default": "warn",

@@ -11,7 +11,7 @@ describe("Don't crash even if without vue-eslint-parser.", () => {
   const code = '<template><div>TEST</div></template>'
 
   for (const key of Object.keys(rules)) {
-    const ruleId = `vue/${key}`
+    const ruleId = `weex/${key}`
 
     it(ruleId, () => {
       const linter = new Linter()

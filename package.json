@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-weex-vue",
+  "name": "eslint-plugin-weex",
   "version": "0.0.1",
   "description": "Official ESLint plugin for Vue using in Weex",
   "main": "lib/index.js",
@@ -17,12 +17,12 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/erha19/eslint-plugin-weex-vue#readme",
+  "homepage": "https://github.com/erha19/eslint-plugin-weex#readme",
   "keywords": [
     "eslint",
     "eslint-plugin",
     "eslint-config",
-    "vue",
+    "weex",
     "vuejs",
     "rules"
   ],
@@ -31,10 +31,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erha19/eslint-plugin-weex-vue.git"
+    "url": "git+https://github.com/erha19/eslint-plugin-weex.git"
   },
   "bugs": {
-    "url": "https://github.com/vuejs/eslint-plugin-vue/issues"
+    "url": "https://github.com/vuejs/eslint-plugin-weex/issues"
   },
   "engines": {
     "node": ">=4"
@@ -50,7 +50,7 @@
     "@types/node": "^4.2.16",
     "babel-eslint": "^8.1.2",
     "chai": "^4.1.0",
-    "eslint": "^4.14.0",
+    "eslint": "^4.19.1",
     "eslint-plugin-eslint-plugin": "^0.8.0",
     "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-vue-libs": "^2.0.0",

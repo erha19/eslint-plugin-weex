@@ -30,8 +30,8 @@ describe('Integration with eslint-plugin-import', () => {
     process.chdir(originalCwd)
   })
 
-  // https://github.com/vuejs/eslint-plugin-vue/issues/21#issuecomment-308957697
-  // eslint-plugin-vue had been breaking eslint-plugin-import if people use both at the same time.
+  // https://github.com/vuejs/eslint-plugin-weex/issues/21#issuecomment-308957697
+  // eslint-plugin-weex had been breaking eslint-plugin-import if people use both at the same time.
   // This test is in order to prevent the regression.
   it('should lint without errors', () => {
     cp.execSync(`${ESLINT} a.vue`, { stdio: 'inherit' })

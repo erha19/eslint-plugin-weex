@@ -10,7 +10,7 @@
 **Tell us about your environment**
 
 * **ESLint Version:**
-* **eslint-plugin-vue Version:**
+* **eslint-plugin-weex Version:**
 * **Node Version:**
 
 **Please show your full configuration:**

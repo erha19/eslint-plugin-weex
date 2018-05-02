@@ -24,23 +24,23 @@ const linter = new eslint.CLIEngine({
   parserOptions: {
     ecmaVersion: 2015
   },
-  plugins: ['vue'],
+  plugins: ['weex'],
   rules: {
     'no-unused-vars': 'error',
-    'vue/comment-directive': 'error',
-    'vue/no-parsing-error': 'error',
-    'vue/no-duplicate-attributes': 'error'
+    'weex/comment-directive': 'error',
+    'weex/no-parsing-error': 'error',
+    'weex/no-duplicate-attributes': 'error'
   },
   useEslintrc: false
 })
 
 describe('comment-directive', () => {
   // Preparation.
-  // Make `require("eslint-plugin-vue")` loading this plugin while this test.
+  // Make `require("eslint-plugin-weex")` loading this plugin while this test.
   const resolveFilename = Module._resolveFilename
   before(() => {
     Module._resolveFilename = function (id) {
-      if (id === 'eslint-plugin-vue') {
+      if (id === 'eslint-plugin-weex') {
         return path.resolve(__dirname, '../../../lib/index.js')
       }
       return resolveFilename.apply(this, arguments)
@@ -63,17 +63,17 @@ describe('comment-directive', () => {
       assert.deepEqual(messages.length, 0)
     })
 
-    it('disable specific rules if <!-- eslint-disable vue/no-duplicate-attributes -->', () => {
+    it('disable specific rules if <!-- eslint-disable weex/no-duplicate-attributes -->', () => {
       const code = `
         <template>
-          <!-- eslint-disable vue/no-duplicate-attributes -->
+          <!-- eslint-disable weex/no-duplicate-attributes -->
           <div id id="a">Hello</div>
         </template>
       `
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 1)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
     })
 
     it('enable all rules if <!-- eslint-enable -->', () => {
@@ -88,25 +88,25 @@ describe('comment-directive', () => {
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 2)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
       assert.deepEqual(messages[0].line, 6)
-      assert.deepEqual(messages[1].ruleId, 'vue/no-duplicate-attributes')
+      assert.deepEqual(messages[1].ruleId, 'weex/no-duplicate-attributes')
       assert.deepEqual(messages[1].line, 6)
     })
 
-    it('enable specific rules if <!-- eslint-enable vue/no-duplicate-attributes -->', () => {
+    it('enable specific rules if <!-- eslint-enable weex/no-duplicate-attributes -->', () => {
       const code = `
         <template>
-          <!-- eslint-disable vue/no-parsing-error, vue/no-duplicate-attributes -->
+          <!-- eslint-disable weex/no-parsing-error, weex/no-duplicate-attributes -->
           <div id id="a">Hello</div>
-          <!-- eslint-enable vue/no-duplicate-attributes -->
+          <!-- eslint-enable weex/no-duplicate-attributes -->
           <div id id="a">Hello</div>
         </template>
       `
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 1)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-duplicate-attributes')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-duplicate-attributes')
       assert.deepEqual(messages[0].line, 6)
     })
 
@@ -139,16 +139,16 @@ describe('comment-directive', () => {
       assert.deepEqual(messages.length, 0)
     })
 
-    it('disable specific rules if <!-- eslint-disable-line vue/no-duplicate-attributes -->', () => {
+    it('disable specific rules if <!-- eslint-disable-line weex/no-duplicate-attributes -->', () => {
       const code = `
         <template>
-          <div id id="a">Hello</div> <!-- eslint-disable-line vue/no-duplicate-attributes -->
+          <div id id="a">Hello</div> <!-- eslint-disable-line weex/no-duplicate-attributes -->
         </template>
       `
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 1)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
     })
 
     it('don\'t disable rules if <!-- eslint-disable-line --> is on another line', () => {
@@ -162,8 +162,8 @@ describe('comment-directive', () => {
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 2)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
-      assert.deepEqual(messages[1].ruleId, 'vue/no-duplicate-attributes')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
+      assert.deepEqual(messages[1].ruleId, 'weex/no-duplicate-attributes')
     })
   })
 
@@ -180,17 +180,17 @@ describe('comment-directive', () => {
       assert.deepEqual(messages.length, 0)
     })
 
-    it('disable specific rules if <!-- eslint-disable-next-line vue/no-duplicate-attributes -->', () => {
+    it('disable specific rules if <!-- eslint-disable-next-line weex/no-duplicate-attributes -->', () => {
       const code = `
         <template>
-          <!-- eslint-disable-next-line vue/no-duplicate-attributes -->
+          <!-- eslint-disable-next-line weex/no-duplicate-attributes -->
           <div id id="a">Hello</div>
         </template>
       `
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 1)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
     })
 
     it('don\'t disable rules if <!-- eslint-disable-next-line --> is on another line', () => {
@@ -205,14 +205,14 @@ describe('comment-directive', () => {
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 2)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
-      assert.deepEqual(messages[1].ruleId, 'vue/no-duplicate-attributes')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
+      assert.deepEqual(messages[1].ruleId, 'weex/no-duplicate-attributes')
     })
 
     it('should affect only the next line', () => {
       const code = `
         <template>
-          <!-- eslint-disable-next-line vue/no-parsing-error, vue/no-duplicate-attributes -->
+          <!-- eslint-disable-next-line weex/no-parsing-error, weex/no-duplicate-attributes -->
           <div id id="a">Hello</div>
           <div id id="b">Hello</div>
         </template>
@@ -220,9 +220,9 @@ describe('comment-directive', () => {
       const messages = linter.executeOnText(code, 'test.vue').results[0].messages
 
       assert.deepEqual(messages.length, 2)
-      assert.deepEqual(messages[0].ruleId, 'vue/no-parsing-error')
+      assert.deepEqual(messages[0].ruleId, 'weex/no-parsing-error')
       assert.deepEqual(messages[0].line, 5)
-      assert.deepEqual(messages[1].ruleId, 'vue/no-duplicate-attributes')
+      assert.deepEqual(messages[1].ruleId, 'weex/no-duplicate-attributes')
       assert.deepEqual(messages[1].line, 5)
     })
   })

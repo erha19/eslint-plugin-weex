@@ -1,4 +1,4 @@
-# global api may not exist in weex. (vue/weex/no-global)
+# disallow global api may not exist in weex (vue/weex/no-global)
 
 - :gear: This rule is included in all of `"plugin:vue/essential"`, `"plugin:vue/strongly-recommended"` and `"plugin:vue/recommended"`.
 
