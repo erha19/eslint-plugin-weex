@@ -1,6 +1,0 @@
-{
-    "editor.tabSize": 2,
-    "eslint.options": {
-        "rulePaths": ["eslint-internal-rules"]
-    }
-}
