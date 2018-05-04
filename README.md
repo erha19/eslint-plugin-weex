@@ -4,13 +4,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-weex.svg?style=flat)](https://npmjs.org/package/eslint-plugin-weex)
 [![CircleCI](https://circleci.com/gh/erha19/eslint-plugin-weex.svg?style=svg)](https://circleci.com/gh/erha19/eslint-plugin-weex)
 
-> Official ESLint plugin for Vue.js
-
-## :art: Playground on the Web
-
-You can try this plugin on the Web.
-
-- https://mysticatea.github.io/vue-eslint-demo/
+> Official ESLint plugin for Weex
 
 ## :grey_exclamation: Requirements
 
