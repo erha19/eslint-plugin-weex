@@ -157,6 +157,7 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [weex/vue/valid-scroller-component](./docs/rules/vue/valid-scroller-component.md) | enforce valid `<scroller>` component |
 |  | [weex/vue/valid-style-flex](./docs/rules/vue/valid-style-flex.md) | disallow use all properties with flex layout |
 |  | [weex/vue/valid-style-font-family](./docs/rules/vue/valid-style-font-family.md) | disallow use multiple fonts in font-family |
+|  | [weex/vue/valid-style-root](./docs/rules/vue/valid-style-root.md) | enforce valid style root |
 |  | [weex/vue/valid-style-selector](./docs/rules/vue/valid-style-selector.md) | enforce valid css seletor used on the weex |
 |  | [weex/vue/valid-switch-component](./docs/rules/vue/valid-switch-component.md) | enforce valid `<switch>` component |
 |  | [weex/vue/valid-template-root](./docs/rules/vue/valid-template-root.md) | enforce valid template root |
