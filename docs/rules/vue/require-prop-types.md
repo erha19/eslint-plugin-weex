@@ -1,0 +1,39 @@
+# require type definitions in props (weex/vue/require-prop-types)
+
+- :gear: This rule is included in `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
+
+In committed code, prop definitions should always be as detailed as possible, specifying at least type(s).
+
+## :book: Rule Details
+
+This rule enforces that a `props` statement contains type definition.
+
+:-1: Examples of **incorrect** code for this rule:
+
+```js
+props: ['status']
+```
+
+:+1: Examples of **correct** code for this rule:
+
+```js
+props: {
+  status: String
+}
+```
+
+```js
+props: {
+  status: {
+    type: String,
+    required: true,
+    validate: function (value) {
+      return ['syncing', 'synced', 'version-conflict', 'error'].indexOf(value) !== -1
+    }
+  }
+}
+```
+
+## :wrench: Options
+
+Nothing.

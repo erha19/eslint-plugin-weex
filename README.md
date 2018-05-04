@@ -115,8 +115,8 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [vue/comment-directive](./docs/rules/comment-directive.md) | support comment-directives in `<template>` |
-|  | [vue/jsx-uses-vars](./docs/rules/jsx-uses-vars.md) | prevent variables used in JSX to be marked as unused |
+|  | [weex/vue/comment-directive](./docs/rules/vue/comment-directive.md) | support comment-directives in `<template>` |
+|  | [weex/vue/jsx-uses-vars](./docs/rules/vue/jsx-uses-vars.md) | prevent variables used in JSX to be marked as unused |
 
 ### Priority A: Essential (Error Prevention)
 
@@ -130,59 +130,59 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [vue/no-async-in-computed-properties](./docs/rules/no-async-in-computed-properties.md) | disallow asynchronous actions in computed properties |
-|  | [vue/no-dupe-keys](./docs/rules/no-dupe-keys.md) | disallow duplication of field names |
-|  | [vue/no-duplicate-attributes](./docs/rules/no-duplicate-attributes.md) | disallow duplication of attributes |
-|  | [vue/no-parsing-error](./docs/rules/no-parsing-error.md) | disallow parsing errors in `<template>` |
-|  | [vue/no-reserved-keys](./docs/rules/no-reserved-keys.md) | disallow overwriting reserved keys |
-| :wrench: | [vue/no-shared-component-data](./docs/rules/no-shared-component-data.md) | enforce component's data property to be a function |
-|  | [vue/no-side-effects-in-computed-properties](./docs/rules/no-side-effects-in-computed-properties.md) | disallow side effects in computed properties |
-|  | [vue/no-template-key](./docs/rules/no-template-key.md) | disallow `key` attribute on `<template>` |
-|  | [vue/no-textarea-mustache](./docs/rules/no-textarea-mustache.md) | disallow mustaches in `<textarea>` |
-|  | [vue/no-unused-vars](./docs/rules/no-unused-vars.md) | disallow unused variable definitions of v-for directives or scope attributes |
-|  | [vue/require-component-is](./docs/rules/require-component-is.md) | require `v-bind:is` of `<component>` elements |
-|  | [vue/require-render-return](./docs/rules/require-render-return.md) | enforce render function to always return value |
-|  | [vue/require-v-for-key](./docs/rules/require-v-for-key.md) | require `v-bind:key` with `v-for` directives |
-|  | [vue/require-valid-default-prop](./docs/rules/require-valid-default-prop.md) | enforce props default values to be valid |
-|  | [vue/return-in-computed-property](./docs/rules/return-in-computed-property.md) | enforce that a return statement is present in computed property |
-|  | [vue/valid-template-root](./docs/rules/valid-template-root.md) | enforce valid template root |
-|  | [vue/valid-v-bind](./docs/rules/valid-v-bind.md) | enforce valid `v-bind` directives |
-|  | [vue/valid-v-cloak](./docs/rules/valid-v-cloak.md) | enforce valid `v-cloak` directives |
-|  | [vue/valid-v-else-if](./docs/rules/valid-v-else-if.md) | enforce valid `v-else-if` directives |
-|  | [vue/valid-v-else](./docs/rules/valid-v-else.md) | enforce valid `v-else` directives |
-|  | [vue/valid-v-for](./docs/rules/valid-v-for.md) | enforce valid `v-for` directives |
-|  | [vue/valid-v-html](./docs/rules/valid-v-html.md) | enforce valid `v-html` directives |
-|  | [vue/valid-v-if](./docs/rules/valid-v-if.md) | enforce valid `v-if` directives |
-|  | [vue/valid-v-model](./docs/rules/valid-v-model.md) | enforce valid `v-model` directives |
-|  | [vue/valid-v-on](./docs/rules/valid-v-on.md) | enforce valid `v-on` directives |
-|  | [vue/valid-v-once](./docs/rules/valid-v-once.md) | enforce valid `v-once` directives |
-|  | [vue/valid-v-pre](./docs/rules/valid-v-pre.md) | enforce valid `v-pre` directives |
-|  | [vue/valid-v-show](./docs/rules/valid-v-show.md) | enforce valid `v-show` directives |
-|  | [vue/valid-v-text](./docs/rules/valid-v-text.md) | enforce valid `v-text` directives |
-|  | [vue/weex/no-document](./docs/rules/weex/no-document.md) | disallow document api is invalid in weex |
-|  | [vue/weex/no-global](./docs/rules/weex/no-global.md) | disallow global api may not exist in weex |
-|  | [vue/weex/no-style-display](./docs/rules/weex/no-style-display.md) | weex not support to use `display` in style |
-|  | [vue/weex/no-style-float](./docs/rules/weex/no-style-float.md) | weex not support to use `float` in style |
-|  | [vue/weex/no-style-z-index](./docs/rules/weex/no-style-z-index.md) | disallow use `z-index` in style |
-|  | [vue/weex/no-v-cloak](./docs/rules/weex/no-v-cloak.md) | disallow use `v-cloak` directives |
-|  | [vue/weex/no-v-html](./docs/rules/weex/no-v-html.md) | disallow use `v-html` directives |
-|  | [vue/weex/no-v-show](./docs/rules/weex/no-v-show.md) | disallow use `no-v-show` directive |
-|  | [vue/weex/no-window](./docs/rules/weex/no-window.md) | disallow window api is invalid in weex |
-|  | [vue/weex/valid-cell-component](./docs/rules/weex/valid-cell-component.md) | weex `<cell>` component does not support margin-top/margin-bottom |
-|  | [vue/weex/valid-image-component](./docs/rules/weex/valid-image-component.md) | weex `<image>` component need style attributes of width and height |
-|  | [vue/weex/valid-indicator-component](./docs/rules/weex/valid-indicator-component.md) | valid `<indicator>` component |
-|  | [vue/weex/valid-input-component](./docs/rules/weex/valid-input-component.md) | valid `<input>` component |
-|  | [vue/weex/valid-list-component](./docs/rules/weex/valid-list-component.md) | valid `<list>` component |
-|  | [vue/weex/valid-picker-module](./docs/rules/weex/valid-picker-module.md) | valid module picker in weex |
-|  | [vue/weex/valid-scroller-component](./docs/rules/weex/valid-scroller-component.md) | valid `<scroller>` component |
-|  | [vue/weex/valid-style-flex](./docs/rules/weex/valid-style-flex.md) | weex does not support all properties in the flex layout |
-|  | [vue/weex/valid-style-font-family](./docs/rules/weex/valid-style-font-family.md) | weex does not support multiple fonts in font-family |
-|  | [vue/weex/valid-style-selector](./docs/rules/weex/valid-style-selector.md) | valid css seletor used on the weex |
-|  | [vue/weex/valid-switch-component](./docs/rules/weex/valid-switch-component.md) | valid `<switch>` component |
-|  | [vue/weex/valid-text-component](./docs/rules/weex/valid-text-component.md) | valid `<text>` component |
-|  | [vue/weex/valid-textarea-component](./docs/rules/weex/valid-textarea-component.md) | valid `<textarea>` component |
-|  | [vue/weex/valid-video-component](./docs/rules/weex/valid-video-component.md) | valid `<video>` component |
-|  | [vue/weex/valid-web-component](./docs/rules/weex/valid-web-component.md) | valid `<web>` component |
+|  | [weex/vue/no-async-in-computed-properties](./docs/rules/vue/no-async-in-computed-properties.md) | disallow asynchronous actions in computed properties |
+|  | [weex/vue/no-document](./docs/rules/vue/no-document.md) | disallow document api is invalid in weex |
+|  | [weex/vue/no-dupe-keys](./docs/rules/vue/no-dupe-keys.md) | disallow duplication of field names |
+|  | [weex/vue/no-duplicate-attributes](./docs/rules/vue/no-duplicate-attributes.md) | disallow duplication of attributes |
+|  | [weex/vue/no-global](./docs/rules/vue/no-global.md) | disallow global api may not exist in weex |
+|  | [weex/vue/no-parsing-error](./docs/rules/vue/no-parsing-error.md) | disallow parsing errors in `<template>` |
+|  | [weex/vue/no-reserved-keys](./docs/rules/vue/no-reserved-keys.md) | disallow overwriting reserved keys |
+| :wrench: | [weex/vue/no-shared-component-data](./docs/rules/vue/no-shared-component-data.md) | enforce component's data property to be a function |
+|  | [weex/vue/no-side-effects-in-computed-properties](./docs/rules/vue/no-side-effects-in-computed-properties.md) | disallow side effects in computed properties |
+|  | [weex/vue/no-style-display](./docs/rules/vue/no-style-display.md) | weex not support to use `display` in style |
+|  | [weex/vue/no-style-float](./docs/rules/vue/no-style-float.md) | weex not support to use `float` in style |
+|  | [weex/vue/no-style-z-index](./docs/rules/vue/no-style-z-index.md) | disallow use `z-index` in style |
+|  | [weex/vue/no-template-key](./docs/rules/vue/no-template-key.md) | disallow `key` attribute on `<template>` |
+|  | [weex/vue/no-textarea-mustache](./docs/rules/vue/no-textarea-mustache.md) | disallow mustaches in `<textarea>` |
+|  | [weex/vue/no-unused-vars](./docs/rules/vue/no-unused-vars.md) | disallow unused variable definitions of v-for directives or scope attributes |
+|  | [weex/vue/no-v-cloak](./docs/rules/vue/no-v-cloak.md) | disallow use `v-cloak` directives |
+|  | [weex/vue/no-v-html](./docs/rules/vue/no-v-html.md) | disallow use `v-html` directives |
+|  | [weex/vue/no-v-show](./docs/rules/vue/no-v-show.md) | disallow use `no-v-show` directive |
+|  | [weex/vue/no-window](./docs/rules/vue/no-window.md) | disallow window api is invalid in weex |
+|  | [weex/vue/require-component-is](./docs/rules/vue/require-component-is.md) | require `v-bind:is` of `<component>` elements |
+|  | [weex/vue/require-render-return](./docs/rules/vue/require-render-return.md) | enforce render function to always return value |
+|  | [weex/vue/require-v-for-key](./docs/rules/vue/require-v-for-key.md) | require `v-bind:key` with `v-for` directives |
+|  | [weex/vue/require-valid-default-prop](./docs/rules/vue/require-valid-default-prop.md) | enforce props default values to be valid |
+|  | [weex/vue/return-in-computed-property](./docs/rules/vue/return-in-computed-property.md) | enforce that a return statement is present in computed property |
+|  | [weex/vue/valid-cell-component](./docs/rules/vue/valid-cell-component.md) | weex `<cell>` component does not support margin-top/margin-bottom |
+|  | [weex/vue/valid-image-component](./docs/rules/vue/valid-image-component.md) | weex `<image>` component need style attributes of width and height |
+|  | [weex/vue/valid-indicator-component](./docs/rules/vue/valid-indicator-component.md) | valid `<indicator>` component |
+|  | [weex/vue/valid-input-component](./docs/rules/vue/valid-input-component.md) | valid `<input>` component |
+|  | [weex/vue/valid-list-component](./docs/rules/vue/valid-list-component.md) | valid `<list>` component |
+|  | [weex/vue/valid-picker-module](./docs/rules/vue/valid-picker-module.md) | valid module picker in weex |
+|  | [weex/vue/valid-scroller-component](./docs/rules/vue/valid-scroller-component.md) | valid `<scroller>` component |
+|  | [weex/vue/valid-style-flex](./docs/rules/vue/valid-style-flex.md) | weex does not support all properties in the flex layout |
+|  | [weex/vue/valid-style-font-family](./docs/rules/vue/valid-style-font-family.md) | weex does not support multiple fonts in font-family |
+|  | [weex/vue/valid-style-selector](./docs/rules/vue/valid-style-selector.md) | valid css seletor used on the weex |
+|  | [weex/vue/valid-switch-component](./docs/rules/vue/valid-switch-component.md) | valid `<switch>` component |
+|  | [weex/vue/valid-template-root](./docs/rules/vue/valid-template-root.md) | enforce valid template root |
+|  | [weex/vue/valid-text-component](./docs/rules/vue/valid-text-component.md) | valid `<text>` component |
+|  | [weex/vue/valid-textarea-component](./docs/rules/vue/valid-textarea-component.md) | valid `<textarea>` component |
+|  | [weex/vue/valid-v-bind](./docs/rules/vue/valid-v-bind.md) | enforce valid `v-bind` directives |
+|  | [weex/vue/valid-v-cloak](./docs/rules/vue/valid-v-cloak.md) | enforce valid `v-cloak` directives |
+|  | [weex/vue/valid-v-else-if](./docs/rules/vue/valid-v-else-if.md) | enforce valid `v-else-if` directives |
+|  | [weex/vue/valid-v-else](./docs/rules/vue/valid-v-else.md) | enforce valid `v-else` directives |
+|  | [weex/vue/valid-v-for](./docs/rules/vue/valid-v-for.md) | enforce valid `v-for` directives |
+|  | [weex/vue/valid-v-html](./docs/rules/vue/valid-v-html.md) | enforce valid `v-html` directives |
+|  | [weex/vue/valid-v-if](./docs/rules/vue/valid-v-if.md) | enforce valid `v-if` directives |
+|  | [weex/vue/valid-v-model](./docs/rules/vue/valid-v-model.md) | enforce valid `v-model` directives |
+|  | [weex/vue/valid-v-on](./docs/rules/vue/valid-v-on.md) | enforce valid `v-on` directives |
+|  | [weex/vue/valid-v-once](./docs/rules/vue/valid-v-once.md) | enforce valid `v-once` directives |
+|  | [weex/vue/valid-v-pre](./docs/rules/vue/valid-v-pre.md) | enforce valid `v-pre` directives |
+|  | [weex/vue/valid-v-show](./docs/rules/vue/valid-v-show.md) | enforce valid `v-show` directives |
+|  | [weex/vue/valid-v-text](./docs/rules/vue/valid-v-text.md) | enforce valid `v-text` directives |
+|  | [weex/vue/valid-video-component](./docs/rules/vue/valid-video-component.md) | valid `<video>` component |
+|  | [weex/vue/valid-web-component](./docs/rules/vue/valid-web-component.md) | valid `<web>` component |
 
 ### Priority B: Strongly Recommended (Improving Readability)
 
@@ -196,18 +196,18 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [vue/attribute-hyphenation](./docs/rules/attribute-hyphenation.md) | enforce attribute naming style in template |
-| :wrench: | [vue/html-end-tags](./docs/rules/html-end-tags.md) | enforce end tag style |
-| :wrench: | [vue/html-indent](./docs/rules/html-indent.md) | enforce consistent indentation in `<template>` |
-| :wrench: | [vue/html-self-closing](./docs/rules/html-self-closing.md) | enforce self-closing style |
-| :wrench: | [vue/max-attributes-per-line](./docs/rules/max-attributes-per-line.md) | enforce the maximum number of attributes per line |
-| :wrench: | [vue/mustache-interpolation-spacing](./docs/rules/mustache-interpolation-spacing.md) | enforce unified spacing in mustache interpolations |
-| :wrench: | [vue/name-property-casing](./docs/rules/name-property-casing.md) | enforce specific casing for the name property in Vue components |
-| :wrench: | [vue/no-multi-spaces](./docs/rules/no-multi-spaces.md) | disallow multiple spaces |
-|  | [vue/require-default-prop](./docs/rules/require-default-prop.md) | require default value for props |
-|  | [vue/require-prop-types](./docs/rules/require-prop-types.md) | require type definitions in props |
-| :wrench: | [vue/v-bind-style](./docs/rules/v-bind-style.md) | enforce `v-bind` directive style |
-| :wrench: | [vue/v-on-style](./docs/rules/v-on-style.md) | enforce `v-on` directive style |
+| :wrench: | [weex/vue/attribute-hyphenation](./docs/rules/vue/attribute-hyphenation.md) | enforce attribute naming style in template |
+| :wrench: | [weex/vue/html-end-tags](./docs/rules/vue/html-end-tags.md) | enforce end tag style |
+| :wrench: | [weex/vue/html-indent](./docs/rules/vue/html-indent.md) | enforce consistent indentation in `<template>` |
+| :wrench: | [weex/vue/html-self-closing](./docs/rules/vue/html-self-closing.md) | enforce self-closing style |
+| :wrench: | [weex/vue/max-attributes-per-line](./docs/rules/vue/max-attributes-per-line.md) | enforce the maximum number of attributes per line |
+| :wrench: | [weex/vue/mustache-interpolation-spacing](./docs/rules/vue/mustache-interpolation-spacing.md) | enforce unified spacing in mustache interpolations |
+| :wrench: | [weex/vue/name-property-casing](./docs/rules/vue/name-property-casing.md) | enforce specific casing for the name property in Vue components |
+| :wrench: | [weex/vue/no-multi-spaces](./docs/rules/vue/no-multi-spaces.md) | disallow multiple spaces |
+|  | [weex/vue/require-default-prop](./docs/rules/vue/require-default-prop.md) | require default value for props |
+|  | [weex/vue/require-prop-types](./docs/rules/vue/require-prop-types.md) | require type definitions in props |
+| :wrench: | [weex/vue/v-bind-style](./docs/rules/vue/v-bind-style.md) | enforce `v-bind` directive style |
+| :wrench: | [weex/vue/v-on-style](./docs/rules/vue/v-on-style.md) | enforce `v-on` directive style |
 
 ### Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
 
@@ -221,20 +221,20 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-|  | [vue/attributes-order](./docs/rules/attributes-order.md) | enforce order of attributes |
-| :wrench: | [vue/html-quotes](./docs/rules/html-quotes.md) | enforce quotes style of HTML attributes |
-|  | [vue/no-confusing-v-for-v-if](./docs/rules/no-confusing-v-for-v-if.md) | disallow confusing `v-for` and `v-if` on the same element |
-| :wrench: | [vue/order-in-components](./docs/rules/order-in-components.md) | enforce order of properties in components |
-|  | [vue/this-in-template](./docs/rules/this-in-template.md) | enforce usage of `this` in template |
+|  | [weex/vue/attributes-order](./docs/rules/vue/attributes-order.md) | enforce order of attributes |
+| :wrench: | [weex/vue/html-quotes](./docs/rules/vue/html-quotes.md) | enforce quotes style of HTML attributes |
+|  | [weex/vue/no-confusing-v-for-v-if](./docs/rules/vue/no-confusing-v-for-v-if.md) | disallow confusing `v-for` and `v-if` on the same element |
+| :wrench: | [weex/vue/order-in-components](./docs/rules/vue/order-in-components.md) | enforce order of properties in components |
+|  | [weex/vue/this-in-template](./docs/rules/vue/this-in-template.md) | enforce usage of `this` in template |
 
 ### Uncategorized
 
 |    | Rule ID | Description |
 |:---|:--------|:------------|
-| :wrench: | [vue/html-closing-bracket-newline](./docs/rules/html-closing-bracket-newline.md) | require or disallow a line break before tag's closing brackets |
-| :wrench: | [vue/html-closing-bracket-spacing](./docs/rules/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets |
-|  | [vue/prop-name-casing](./docs/rules/prop-name-casing.md) | enforce specific casing for the Prop name in Vue components |
-| :wrench: | [vue/script-indent](./docs/rules/script-indent.md) | enforce consistent indentation in `<script>` |
+| :wrench: | [weex/vue/html-closing-bracket-newline](./docs/rules/vue/html-closing-bracket-newline.md) | require or disallow a line break before tag's closing brackets |
+| :wrench: | [weex/vue/html-closing-bracket-spacing](./docs/rules/vue/html-closing-bracket-spacing.md) | require or disallow a space before tag's closing brackets |
+|  | [weex/vue/prop-name-casing](./docs/rules/vue/prop-name-casing.md) | enforce specific casing for the Prop name in Vue components |
+| :wrench: | [weex/vue/script-indent](./docs/rules/vue/script-indent.md) | enforce consistent indentation in `<script>` |
 
 <!--RULES_TABLE_END-->
 

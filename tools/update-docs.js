@@ -39,12 +39,12 @@ for (const rule of rules) {
   const notes = []
 
   if (categoryIndex >= 0) {
-    const presets = categories.slice(categoryIndex).map(category => `\`"plugin:vue/${category.categoryId}"\``)
+    const presets = categories.slice(categoryIndex).map(category => `\`"plugin:weex/vue/${category.categoryId}"\``)
     notes.push(`- :gear: This rule is included in ${formatItems(presets)}.`)
   }
   if (rule.meta.deprecated) {
     if (rule.meta.docs.replacedBy) {
-      const replacedRules = rule.meta.docs.replacedBy.map(name => `[vue/${name}](${name}.md) rule`)
+      const replacedRules = rule.meta.docs.replacedBy.map(name => `[weex/vue/${name}](${name}.md) rule`)
       notes.push(`- :warning: This rule was **deprecated** and replaced by ${formatItems(replacedRules)}.`)
     } else {
       notes.push(`- :warning: This rule was **deprecated**.`)

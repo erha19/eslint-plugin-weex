@@ -30,7 +30,7 @@ module.exports =
       return file.replace('.js', '')
     })
     .map(name => ({
-      ruleId: `vue/${name}`,
+      ruleId: `weex/${name}`,
       name,
       meta: require(path.join(ROOT, name)).meta
     }))
