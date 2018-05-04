@@ -227,6 +227,42 @@ tester.run('valid-style-selector', rule, {
         message: 'PseudoClassSelector `hover` is not support in weex now, you can use :focus :active :disabled :enabled.',
         line: 2
       }]
+    },
+    {
+      filename: 'test.vue',
+      code: `
+        <template>
+            <div></div>
+        </template>
+        <style>
+          .child > .next{
+            color: #fff;
+          }
+        </style>
+            `,
+      parserOptions,
+      errors: [{
+        message: 'Combinator `>` is not support in weex now, please do not use it.',
+        line: 2
+      }]
+    },
+    {
+      filename: 'test.vue',
+      code: `
+        <template>
+            <div></div>
+        </template>
+        <style>
+          .child .next{
+            color: #fff;
+          }
+        </style>
+            `,
+      parserOptions,
+      errors: [{
+        message: 'Selector `.child .next` is not support in weex now, please do not use it.',
+        line: 2
+      }]
     }
   ]
 })

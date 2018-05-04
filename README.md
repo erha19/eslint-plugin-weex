@@ -163,17 +163,14 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [weex/vue/valid-text-component](./docs/rules/vue/valid-text-component.md) | enforce valid `<text>` component |
 |  | [weex/vue/valid-textarea-component](./docs/rules/vue/valid-textarea-component.md) | enforce valid `<textarea>` component |
 |  | [weex/vue/valid-v-bind](./docs/rules/vue/valid-v-bind.md) | enforce valid `v-bind` directives |
-|  | [weex/vue/valid-v-cloak](./docs/rules/vue/valid-v-cloak.md) | enforce valid `v-cloak` directives |
 |  | [weex/vue/valid-v-else-if](./docs/rules/vue/valid-v-else-if.md) | enforce valid `v-else-if` directives |
 |  | [weex/vue/valid-v-else](./docs/rules/vue/valid-v-else.md) | enforce valid `v-else` directives |
 |  | [weex/vue/valid-v-for](./docs/rules/vue/valid-v-for.md) | enforce valid `v-for` directives |
-|  | [weex/vue/valid-v-html](./docs/rules/vue/valid-v-html.md) | enforce valid `v-html` directives |
 |  | [weex/vue/valid-v-if](./docs/rules/vue/valid-v-if.md) | enforce valid `v-if` directives |
 |  | [weex/vue/valid-v-model](./docs/rules/vue/valid-v-model.md) | enforce valid `v-model` directives |
 |  | [weex/vue/valid-v-on](./docs/rules/vue/valid-v-on.md) | enforce valid `v-on` directives |
 |  | [weex/vue/valid-v-once](./docs/rules/vue/valid-v-once.md) | enforce valid `v-once` directives |
 |  | [weex/vue/valid-v-pre](./docs/rules/vue/valid-v-pre.md) | enforce valid `v-pre` directives |
-|  | [weex/vue/valid-v-show](./docs/rules/vue/valid-v-show.md) | enforce valid `v-show` directives |
 |  | [weex/vue/valid-v-text](./docs/rules/vue/valid-v-text.md) | enforce valid `v-text` directives |
 |  | [weex/vue/valid-video-component](./docs/rules/vue/valid-video-component.md) | enforce valid `<video>` component |
 |  | [weex/vue/valid-web-component](./docs/rules/vue/valid-web-component.md) | enforce valid `<web>` component |
