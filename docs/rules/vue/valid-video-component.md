@@ -1,4 +1,4 @@
-# valid `<video>` component (weex/vue/valid-video-component)
+# enforce valid `<video>` component (weex/vue/valid-video-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

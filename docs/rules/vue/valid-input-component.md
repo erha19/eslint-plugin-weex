@@ -1,4 +1,4 @@
-# valid `<input>` component (weex/vue/valid-input-component)
+# enforce valid `<input>` component (weex/vue/valid-input-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

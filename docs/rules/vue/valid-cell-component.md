@@ -1,4 +1,4 @@
-# weex `<cell>` component does not support margin-top/margin-bottom (weex/vue/valid-cell-component)
+# enforce valid `<cell>` component (weex/vue/valid-cell-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

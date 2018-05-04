@@ -1,4 +1,4 @@
-# valid `<web>` component (weex/vue/valid-web-component)
+# enforce valid `<web>` component (weex/vue/valid-web-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

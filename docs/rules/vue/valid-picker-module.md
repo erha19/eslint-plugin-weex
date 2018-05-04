@@ -1,4 +1,4 @@
-# valid module picker in weex (weex/vue/valid-picker-module)
+# enforce valid module picker in weex (weex/vue/valid-picker-module)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

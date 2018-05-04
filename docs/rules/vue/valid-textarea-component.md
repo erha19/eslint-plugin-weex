@@ -1,4 +1,4 @@
-# valid `<textarea>` component (weex/vue/valid-textarea-component)
+# enforce valid `<textarea>` component (weex/vue/valid-textarea-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

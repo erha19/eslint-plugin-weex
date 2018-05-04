@@ -1,4 +1,4 @@
-# weex `<image>` component need style attributes of width and height (weex/vue/valid-image-component)
+# enforce valid `<image>` component (weex/vue/valid-image-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

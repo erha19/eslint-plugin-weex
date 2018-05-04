@@ -1,4 +1,4 @@
-# weex does not support all properties in the flex layout (weex/vue/valid-style-flex)
+# disallow use all properties with flex layout (weex/vue/valid-style-flex)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

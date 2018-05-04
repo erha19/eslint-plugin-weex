@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-weex.svg?style=flat)](https://npmjs.org/package/eslint-plugin-weex)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-weex.svg?style=flat)](https://npmjs.org/package/eslint-plugin-weex)
-[![CircleCI](https://circleci.com/gh/vuejs/eslint-plugin-weex.svg?style=svg)](https://circleci.com/gh/vuejs/eslint-plugin-weex)
+[![CircleCI](https://circleci.com/gh/erha19/eslint-plugin-weex.svg?style=svg)](https://circleci.com/gh/erha19/eslint-plugin-weex)
 
 > Official ESLint plugin for Vue.js
 
@@ -154,20 +154,20 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [weex/vue/require-v-for-key](./docs/rules/vue/require-v-for-key.md) | require `v-bind:key` with `v-for` directives |
 |  | [weex/vue/require-valid-default-prop](./docs/rules/vue/require-valid-default-prop.md) | enforce props default values to be valid |
 |  | [weex/vue/return-in-computed-property](./docs/rules/vue/return-in-computed-property.md) | enforce that a return statement is present in computed property |
-|  | [weex/vue/valid-cell-component](./docs/rules/vue/valid-cell-component.md) | weex `<cell>` component does not support margin-top/margin-bottom |
-|  | [weex/vue/valid-image-component](./docs/rules/vue/valid-image-component.md) | weex `<image>` component need style attributes of width and height |
-|  | [weex/vue/valid-indicator-component](./docs/rules/vue/valid-indicator-component.md) | valid `<indicator>` component |
-|  | [weex/vue/valid-input-component](./docs/rules/vue/valid-input-component.md) | valid `<input>` component |
-|  | [weex/vue/valid-list-component](./docs/rules/vue/valid-list-component.md) | valid `<list>` component |
-|  | [weex/vue/valid-picker-module](./docs/rules/vue/valid-picker-module.md) | valid module picker in weex |
-|  | [weex/vue/valid-scroller-component](./docs/rules/vue/valid-scroller-component.md) | valid `<scroller>` component |
-|  | [weex/vue/valid-style-flex](./docs/rules/vue/valid-style-flex.md) | weex does not support all properties in the flex layout |
-|  | [weex/vue/valid-style-font-family](./docs/rules/vue/valid-style-font-family.md) | weex does not support multiple fonts in font-family |
-|  | [weex/vue/valid-style-selector](./docs/rules/vue/valid-style-selector.md) | valid css seletor used on the weex |
-|  | [weex/vue/valid-switch-component](./docs/rules/vue/valid-switch-component.md) | valid `<switch>` component |
+|  | [weex/vue/valid-cell-component](./docs/rules/vue/valid-cell-component.md) | enforce valid `<cell>` component |
+|  | [weex/vue/valid-image-component](./docs/rules/vue/valid-image-component.md) | enforce valid `<image>` component |
+|  | [weex/vue/valid-indicator-component](./docs/rules/vue/valid-indicator-component.md) | enforce valid `<indicator>` component |
+|  | [weex/vue/valid-input-component](./docs/rules/vue/valid-input-component.md) | enforce valid `<input>` component |
+|  | [weex/vue/valid-list-component](./docs/rules/vue/valid-list-component.md) | enforce valid `<list>` component |
+|  | [weex/vue/valid-picker-module](./docs/rules/vue/valid-picker-module.md) | enforce valid module picker in weex |
+|  | [weex/vue/valid-scroller-component](./docs/rules/vue/valid-scroller-component.md) | enforce valid `<scroller>` component |
+|  | [weex/vue/valid-style-flex](./docs/rules/vue/valid-style-flex.md) | disallow use all properties with flex layout |
+|  | [weex/vue/valid-style-font-family](./docs/rules/vue/valid-style-font-family.md) | disallow use multiple fonts in font-family |
+|  | [weex/vue/valid-style-selector](./docs/rules/vue/valid-style-selector.md) | enforce valid css seletor used on the weex |
+|  | [weex/vue/valid-switch-component](./docs/rules/vue/valid-switch-component.md) | enforce valid `<switch>` component |
 |  | [weex/vue/valid-template-root](./docs/rules/vue/valid-template-root.md) | enforce valid template root |
-|  | [weex/vue/valid-text-component](./docs/rules/vue/valid-text-component.md) | valid `<text>` component |
-|  | [weex/vue/valid-textarea-component](./docs/rules/vue/valid-textarea-component.md) | valid `<textarea>` component |
+|  | [weex/vue/valid-text-component](./docs/rules/vue/valid-text-component.md) | enforce valid `<text>` component |
+|  | [weex/vue/valid-textarea-component](./docs/rules/vue/valid-textarea-component.md) | enforce valid `<textarea>` component |
 |  | [weex/vue/valid-v-bind](./docs/rules/vue/valid-v-bind.md) | enforce valid `v-bind` directives |
 |  | [weex/vue/valid-v-cloak](./docs/rules/vue/valid-v-cloak.md) | enforce valid `v-cloak` directives |
 |  | [weex/vue/valid-v-else-if](./docs/rules/vue/valid-v-else-if.md) | enforce valid `v-else-if` directives |
@@ -181,8 +181,8 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [weex/vue/valid-v-pre](./docs/rules/vue/valid-v-pre.md) | enforce valid `v-pre` directives |
 |  | [weex/vue/valid-v-show](./docs/rules/vue/valid-v-show.md) | enforce valid `v-show` directives |
 |  | [weex/vue/valid-v-text](./docs/rules/vue/valid-v-text.md) | enforce valid `v-text` directives |
-|  | [weex/vue/valid-video-component](./docs/rules/vue/valid-video-component.md) | valid `<video>` component |
-|  | [weex/vue/valid-web-component](./docs/rules/vue/valid-web-component.md) | valid `<web>` component |
+|  | [weex/vue/valid-video-component](./docs/rules/vue/valid-video-component.md) | enforce valid `<video>` component |
+|  | [weex/vue/valid-web-component](./docs/rules/vue/valid-web-component.md) | enforce valid `<web>` component |
 
 ### Priority B: Strongly Recommended (Improving Readability)
 

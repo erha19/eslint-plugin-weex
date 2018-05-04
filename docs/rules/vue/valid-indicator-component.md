@@ -1,4 +1,4 @@
-# valid `<indicator>` component (weex/vue/valid-indicator-component)
+# enforce valid `<indicator>` component (weex/vue/valid-indicator-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 

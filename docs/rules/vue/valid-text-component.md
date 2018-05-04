@@ -1,4 +1,4 @@
-# valid `<text>` component (weex/vue/valid-text-component)
+# enforce valid `<text>` component (weex/vue/valid-text-component)
 
 - :gear: This rule is included in all of `"plugin:weex/vue/essential"`, `"plugin:weex/vue/strongly-recommended"` and `"plugin:weex/vue/recommended"`.
 
