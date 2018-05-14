@@ -30,7 +30,7 @@ module.exports = {
       "consistent-docs-description": "error",
       "no-invalid-meta": "error",
       "require-meta-docs-url": ["error", {
-        "pattern": `https://github.com/vuejs/eslint-plugin-weex/blob/v${version}/docs/rules/{{name}}.md`
+        "pattern": `https://github.com/weexteam/eslint-plugin-weex/blob/v${version}/docs/rules/{{name}}.md`
       }]
     }
   }]

@@ -148,6 +148,7 @@ Enforce all the rules in this category, as well as all higher priority rules, wi
 |  | [weex/vue/require-v-for-key](./docs/rules/vue/require-v-for-key.md) | require `v-bind:key` with `v-for` directives |
 |  | [weex/vue/require-valid-default-prop](./docs/rules/vue/require-valid-default-prop.md) | enforce props default values to be valid |
 |  | [weex/vue/return-in-computed-property](./docs/rules/vue/return-in-computed-property.md) | enforce that a return statement is present in computed property |
+|  | [weex/vue/valid-animation-module](./docs/rules/vue/valid-animation-module.md) | enforce valid module animation in weex |
 |  | [weex/vue/valid-cell-component](./docs/rules/vue/valid-cell-component.md) | enforce valid `<cell>` component |
 |  | [weex/vue/valid-image-component](./docs/rules/vue/valid-image-component.md) | enforce valid `<image>` component |
 |  | [weex/vue/valid-indicator-component](./docs/rules/vue/valid-indicator-component.md) | enforce valid `<indicator>` component |
