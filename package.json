@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-weex",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Official ESLint plugin for Vue using in Weex",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "pretest": "npm run lint",
     "preversion": "npm test && npm run update && git add .",
     "version": "npm run lint -- --fix && git add .",
-    "update": "node ./tools/update.js"
+    "updatxe": "node ./tools/update.js"
   },
   "files": [
     "lib"
