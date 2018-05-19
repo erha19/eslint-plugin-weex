@@ -39,7 +39,67 @@ tester.run('valid-image-component', rule, {
       filename: 'test.vue',
       code: `<template>
         <div>
+        <image style="width:500px;" :style="{height:'500px'}" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image style="width:500px;" :style="{height:data.height}" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :style="{width: '200px', height:'500px'}" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image style="width:500px;height:500px" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
         <image class="image" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>
+      <style>
+        .image {
+          width:500px;
+          height:500px;
+        }
+        .other {
+          width: 20px;
+          height: 100px;
+        }
+      </style>
+      `
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :class="image" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>
+      `
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :class="'image'" src="https://vuejs.org/images/logo.png"></image>
         </div>
       </template>
       <style>
@@ -61,6 +121,20 @@ tester.run('valid-image-component', rule, {
       code: `<template>
       <div>
       <image class="image" src="https://vuejs.org/images/logo.png"></image>
+      </div>
+    </template>
+    <style>
+      .image {
+
+      }
+    </style>`,
+      errors: ['The style attributes of width and height must be specified in image component, otherwise it won’t work.']
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+      <div>
+      <image :class="'image'" src="https://vuejs.org/images/logo.png"></image>
       </div>
     </template>
     <style>
