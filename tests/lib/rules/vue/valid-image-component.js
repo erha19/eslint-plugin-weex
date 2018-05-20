@@ -118,7 +118,31 @@ tester.run('valid-image-component', rule, {
       filename: 'test.vue',
       code: `<template>
         <div>
+        <image :class="bgStyle" style="" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :class="bgStyle" style="height:20px" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
         <image :style="bgStyle" style="" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image class="bgImage" :style="bgStyle" style="" src="https://vuejs.org/images/logo.png"></image>
         </div>
       </template>`
     }
