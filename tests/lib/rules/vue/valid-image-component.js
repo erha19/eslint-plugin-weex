@@ -113,6 +113,14 @@ tester.run('valid-image-component', rule, {
         }
       </style>
       `
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :style="bgStyle" style="" src="https://vuejs.org/images/logo.png"></image>
+        </div>
+      </template>`
     }
   ],
   invalid: [
