@@ -145,7 +145,16 @@ tester.run('valid-image-component', rule, {
         <image class="bgImage" :style="bgStyle" style="" src="https://vuejs.org/images/logo.png"></image>
         </div>
       </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :class="['row-' + row.cols, 'row-item-image', 'row-item-image-' + row.cols]" :src="col.itemImg"></image>
+        </div>
+      </template>`
     }
+    
   ],
   invalid: [
     {
