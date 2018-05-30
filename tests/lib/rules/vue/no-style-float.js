@@ -106,7 +106,7 @@ tester.run('no-style-float', rule, {
     code: `
     <template>
         <div>
-            <image style="height:320px;float : 111" resize="cover" :src="i.img"></image>
+            <image style="height:320px;float : left" resize="cover" :src="i.img"></image>
         </div>
     </template>
     <style>
