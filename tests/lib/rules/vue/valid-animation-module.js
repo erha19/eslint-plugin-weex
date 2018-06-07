@@ -106,6 +106,27 @@ ruleTester.run('valid-animation-module', rule, {
       }
       `,
     parserOptions
+  }, {
+    filename: 'test.vue',
+    code: `
+      const body_1 = this.$refs.animate_body_1;
+      const body_2 = this.$refs.animate_body_2;
+      export default {
+        methods: {
+          moveleft: function() {
+            const body_1 = this.$refs.animate_body_1;//这两行报错
+                const body_2 = this.$refs.animate_body_2;//这两行导致报错
+                animation.transition(body_2, {
+                    styles: {
+                        transform: 'translateX(-200%)',
+                    },
+                    duration: 0, //ms
+                }, function () {})
+          }
+        }
+      }
+      `,
+    parserOptions
   }],
   invalid: [
     {
