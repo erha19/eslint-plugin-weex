@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-weex",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Official ESLint plugin for Vue using in Weex",
   "main": "lib/index.js",
   "scripts": {
