@@ -76,43 +76,6 @@ tester.run('no-v-show', rule, {
     {
       filename: 'test.vue',
       code: `
-      <template>
-          <div>
-              <image class="pic" resize="cover" :src="i.img"/>
-          </div>
-      </template>
-      <style>
-        .pic{
-          display:none
-        }
-        .pic2{
-          display:none;
-        }
-      </style>
-          `,
-      parserOptions,
-      errors: ["'display:none' is disallow in weex.", "'display:none' is disallow in weex."]
-    },
-    {
-      filename: 'test.vue',
-      code: `
-      <template>
-          <div>
-              <image class="pic" v-show="showPic" resize="cover" :src="i.img"/>
-          </div>
-      </template>
-      <style>
-        .pic{
-          display:none
-        }
-      </style>
-          `,
-      parserOptions,
-      errors: ["'display:none' is disallow in weex.", "'v-show' directives is disallow in weex."]
-    },
-    {
-      filename: 'test.vue',
-      code: `
         <template>
             <div>
                 <router-view class="r-box" v-show="showSomething"></router-view>
@@ -122,34 +85,6 @@ tester.run('no-v-show', rule, {
             `,
       parserOptions,
       errors: ["'v-show' directives is disallow in weex.", "'display:none' is disallow in weex."]
-    },
-    {
-      filename: 'test.vue',
-      code: `
-      <template>
-          <div>
-              <image style="height:300px;display : none;  width:450px;" resize="cover" :src="i.img"></image>
-          </div>
-      </template>
-            `,
-      parserOptions,
-      errors: ["'display:none' is disallow in weex."]
-    }, {
-      filename: 'test.vue',
-      code: `
-      <template>
-          <div>
-              <image class="img" resize="cover" :src="i.img"></image>
-          </div>
-      </template>
-      <style>
-        .img{
-          display:none;
-        }
-      </style>
-            `,
-      parserOptions,
-      errors: ["'display:none' is disallow in weex."]
     }
   ]
 })

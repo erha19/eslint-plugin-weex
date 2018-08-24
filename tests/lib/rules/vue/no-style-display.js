@@ -58,50 +58,6 @@ tester.run('no-style-display', rule, {
   invalid: [{
     filename: 'test.vue',
     code: `
-      <template>
-          <div>
-              <image style="display:none; width:881px; hieght:45px" resize="cover" :src="i.img"></image>
-          </div>
-      </template>
-      <style>
-        .child{
-            display:none;
-        }
-      </style>
-          `,
-    parserOptions,
-    errors: [{
-      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
-      line: 2
-    }, {
-      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
-      line: 4
-    }]
-  }, {
-    filename: 'test.vue',
-    code: `
-      <template>
-          <div>
-              <image style="display:none; width:760px;" resize="cover" :src="./i.img"/>
-          </div>
-      </template>
-          `,
-    parserOptions,
-    errors: ["Style 'display' is not support in weex, you need to use flex for style layout."]
-  }, {
-    filename: 'test.vue',
-    code: `
-    <template>
-        <div>
-            <image style="height:300px; display:none;  width:450px;" resize="cover" :src="i.img"></image>
-        </div>
-    </template>
-          `,
-    parserOptions,
-    errors: ["Style 'display' is not support in weex, you need to use flex for style layout."]
-  }, {
-    filename: 'test.vue',
-    code: `
     <template>
         <div>
             <image style="height:320px;display:none;" resize="cover" :src="i.img"></image>
@@ -116,10 +72,10 @@ tester.run('no-style-display', rule, {
     parserOptions,
     errors: [{
       message: "Style 'display' is not support in weex, you need to use flex for style layout.",
-      line: 2
+      line: 4
     }, {
       message: "Style 'display' is not support in weex, you need to use flex for style layout.",
-      line: 4
+      line: 9
     }]
   }]
 })

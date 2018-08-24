@@ -73,10 +73,10 @@ tester.run('no-style-float', rule, {
     parserOptions,
     errors: [{
       message: "Style 'float' is not support in weex.",
-      line: 2
+      line: 5
     }, {
       message: "Style 'float' is not support in weex.",
-      line: 5
+      line: 10
     }]
   }, {
     filename: 'test.vue',
@@ -100,7 +100,10 @@ tester.run('no-style-float', rule, {
     </template>
           `,
     parserOptions,
-    errors: ["Style 'float' is not support in weex."]
+    errors: [{
+      message: "Style 'float' is not support in weex.",
+      line: 4
+    }]
   }, {
     filename: 'test.vue',
     code: `
@@ -118,10 +121,10 @@ tester.run('no-style-float', rule, {
     parserOptions,
     errors: [{
       message: "Style 'float' is not support in weex.",
-      line: 2
+      line: 4
     }, {
       message: "Style 'float' is not support in weex.",
-      line: 4
+      line: 9
     }]
   }]
 })

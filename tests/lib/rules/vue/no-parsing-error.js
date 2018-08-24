@@ -198,12 +198,15 @@ tester.run('no-parsing-error', rule, {
     },
     {
       code: '<template></div></template>',
-      options: [{ 'x-invalid-end-tag': false }],
-      errors: ['Parsing error: x-invalid-end-tag.']
+      options: [{ 'x-invalid-end-tag': false }]
     },
     {
       code: '<template><div xmlns=""></template>',
       options: [{ 'x-invalid-namespace': false }]
+    },
+    {
+      code: '<template><image></image></template>',
+      options: [{ 'x-invalid-end-tag': false }],
     },
     '<template><div/></template>',
     '<template><div v-show="">hello</div></template>'
@@ -580,6 +583,7 @@ tester.run('no-parsing-error', rule, {
     },
     {
       code: '<template></div></template>',
+      options: [{ 'x-invalid-end-tag': true }],
       errors: ['Parsing error: x-invalid-end-tag.']
     },
     {
