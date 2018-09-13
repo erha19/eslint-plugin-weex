@@ -206,7 +206,7 @@ tester.run('no-parsing-error', rule, {
     },
     {
       code: '<template><image></image></template>',
-      options: [{ 'x-invalid-end-tag': false }],
+      options: [{ 'x-invalid-end-tag': false }]
     },
     '<template><div/></template>',
     '<template><div v-show="">hello</div></template>'
@@ -580,11 +580,6 @@ tester.run('no-parsing-error', rule, {
     {
       code: '<template><div></div/></template>',
       errors: ['Parsing error: end-tag-with-trailing-solidus.']
-    },
-    {
-      code: '<template></div></template>',
-      options: [{ 'x-invalid-end-tag': true }],
-      errors: ['Parsing error: x-invalid-end-tag.']
     },
     {
       code: '<template><div xmlns=""></template>',

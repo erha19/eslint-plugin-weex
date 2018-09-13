@@ -145,6 +145,32 @@ tester.run('valid-image-component', rule, {
         <image :class="['row-' + row.cols, 'row-item-image', 'row-item-image-' + row.cols]" :src="col.itemImg"></image>
         </div>
       </template>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image class="imagesClass" :style="{height: imageH}" :src="col.itemImg"></image>
+        </div>
+      </template>
+      <style>
+      .imagesClass {
+        width: 120px;
+      }
+    </style>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image :class="imagesClass" :style="{height: imageH}" :src="col.itemImg"></image>
+        </div>
+      </template>
+      <style>
+      .imagesClass {
+        width: 120px;
+      }
+    </style>`
     }
 
   ],
