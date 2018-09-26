@@ -171,6 +171,20 @@ tester.run('valid-image-component', rule, {
         width: 120px;
       }
     </style>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div>
+        <image class="images-class" :src="col.itemImg"></image>
+        </div>
+      </template>
+      <style>
+      .images-class {
+        height: 20px;
+        width: 120px;
+      }
+    </style>`
     }
 
   ],
