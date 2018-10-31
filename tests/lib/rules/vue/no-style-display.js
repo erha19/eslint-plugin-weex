@@ -71,10 +71,10 @@ tester.run('no-style-display', rule, {
           `,
     parserOptions,
     errors: [{
-      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
+      message: "Style 'display' is not support in weex, you need to use flex for page layout.",
       line: 4
     }, {
-      message: "Style 'display' is not support in weex, you need to use flex for style layout.",
+      message: "Style 'display' is not support in weex, you need to use flex for page layout.",
       line: 9
     }]
   }]

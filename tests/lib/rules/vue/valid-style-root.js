@@ -30,6 +30,10 @@ tester.run('valid-style-root', rule, {
     {
       filename: 'test.vue',
       code: '<template></template><style scoped></style>'
+    },
+    {
+      filename: 'test.vue',
+      code: '<template></template><style lang="less" scoped></style>'
     }
   ],
   invalid: [
