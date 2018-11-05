@@ -73,5 +73,27 @@ ruleTester.run('no-global', rule, {
       `,
     parserOptions,
     errors: [`global api is invalid in weex.`]
+  }, {
+    filename: 'test.vue',
+    code: `
+      export default {
+        methods: {
+          test1: {
+            test2: {
+              test3: {
+                test4: {
+                  test5: function() {
+                    global.require()
+                    global.require()
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      `,
+    parserOptions,
+    errors: [`global api is invalid in weex.`, `global api is invalid in weex.`]
   }]
 })
