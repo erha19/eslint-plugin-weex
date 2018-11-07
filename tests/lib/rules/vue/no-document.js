@@ -73,7 +73,7 @@ ruleTester.run('no-document', rule, {
       }
       `,
     parserOptions,
-    errors: [`document api is invalid in weex.`,`document api is invalid in weex.`]
+    errors: [`document api is invalid in weex.`, `document api is invalid in weex.`]
   }, {
     filename: 'test.vue',
     code: `
@@ -97,6 +97,6 @@ ruleTester.run('no-document', rule, {
       }
       `,
     parserOptions,
-    errors: [`document api is invalid in weex.`,`document api is invalid in weex.`]
+    errors: [`document api is invalid in weex.`, `document api is invalid in weex.`]
   }]
 })
