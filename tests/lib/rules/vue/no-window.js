@@ -95,5 +95,29 @@ ruleTester.run('no-window', rule, {
       `,
     parserOptions,
     errors: [`window api is invalid in weex.`, `window api is invalid in weex.`]
+  }, {
+    filename: 'test.vue',
+    code: `
+      export default {
+        methods: {
+          test1: {
+            test2: {
+              test3: {
+                test4: {
+                  test5: function() {
+                    window.open('about:blank')
+                  },
+                  test6: function() {
+                    window.open('about:blank')
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      `,
+    parserOptions,
+    errors: [`window api is invalid in weex.`, `window api is invalid in weex.`]
   }]
 })
