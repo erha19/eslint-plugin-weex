@@ -199,8 +199,18 @@ tester.run('valid-image-component', rule, {
         width: 120px;
       }
     </style>`
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+        <div class="wrapper">
+          <image style="height:96px; width:96px;" :src="successIcon"></image>
+          <image style="height:100px; width:100px" :src="logo" class="logo"></image>
+          <image :src="logo" class="logo"></image>
+          <image style="height:96px; width:96px;" :src="successIcon"></image>
+        </div>
+      </template>`
     }
-
   ],
   invalid: [
     {
