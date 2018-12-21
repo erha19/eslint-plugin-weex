@@ -33,6 +33,10 @@ tester.run('valid-style-root', rule, {
     },
     {
       filename: 'test.vue',
+      code: '<template></template><script></script><style scoped lang="sass"></style>'
+    },
+    {
+      filename: 'test.vue',
       code: '<template></template><style lang="less" scoped></style>'
     }
   ],
