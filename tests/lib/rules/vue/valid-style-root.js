@@ -50,8 +50,8 @@ tester.run('valid-style-root', rule, {
       errors: [{
         message: 'The style root requires scoped attribute.',
         line: 3,
-        column: 7,
-        endColumn: 21,
+        column: 6,
+        endColumn: 22,
         endLine: 3
       }]
     },
@@ -67,8 +67,8 @@ tester.run('valid-style-root', rule, {
       errors: [{
         message: 'The style root requires scoped attribute.',
         line: 5,
-        column: 7,
-        endColumn: 21,
+        column: 6,
+        endColumn: 22,
         endLine: 5
       }]
     },
@@ -84,8 +84,8 @@ tester.run('valid-style-root', rule, {
       errors: [{
         message: 'The style root requires scoped attribute.',
         line: 5,
-        column: 7,
-        endColumn: 27,
+        column: 6,
+        endColumn: 28,
         endLine: 5
       }]
     },
@@ -101,8 +101,8 @@ tester.run('valid-style-root', rule, {
       errors: [{
         message: 'The style root requires scoped attribute.',
         line: 5,
-        column: 7,
-        endColumn: 33,
+        column: 6,
+        endColumn: 34,
         endLine: 5
       }]
     }
