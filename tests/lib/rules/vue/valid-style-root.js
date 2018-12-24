@@ -54,6 +54,57 @@ tester.run('valid-style-root', rule, {
         endColumn: 21,
         endLine: 3
       }]
+    },
+    {
+      filename: 'test.vue',
+      code: `
+      <template></template>
+
+
+      <style></style>
+
+      `,
+      errors: [{
+        message: 'The style root requires scoped attribute.',
+        line: 5,
+        column: 7,
+        endColumn: 21,
+        endLine: 5
+      }]
+    },
+    {
+      filename: 'test.vue',
+      code: `
+      <template></template>
+
+
+      <stylescoped></style>
+
+      `,
+      errors: [{
+        message: 'The style root requires scoped attribute.',
+        line: 5,
+        column: 7,
+        endColumn: 27,
+        endLine: 5
+      }]
+    },
+    {
+      filename: 'test.vue',
+      code: `
+      <template></template>
+
+
+      <style lang="sass"></style>   
+
+      `,
+      errors: [{
+        message: 'The style root requires scoped attribute.',
+        line: 5,
+        column: 7,
+        endColumn: 33,
+        endLine: 5
+      }]
     }
   ]
 })
