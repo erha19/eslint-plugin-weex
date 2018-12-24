@@ -264,11 +264,11 @@ tester.run('valid-image-component', rule, {
         message: 'The style attributes of width must be specified in image component, otherwise it won’t work.',
         line: 3,
         column: 9
-      },{
+      }, {
         message: 'The style attributes of width and height must be specified in image component, otherwise it won’t work.',
         line: 5,
         column: 9
-      },{
+      }, {
         message: 'The style attributes of width must be specified in image component, otherwise it won’t work.',
         line: 6,
         column: 9

@@ -48,7 +48,7 @@ tester.run('valid-style-root', rule, {
       <style></style>
       `,
       errors: [{
-        message:'The style root requires scoped attribute.',
+        message: 'The style root requires scoped attribute.',
         line: 3,
         column: 7,
         endColumn: 21,
