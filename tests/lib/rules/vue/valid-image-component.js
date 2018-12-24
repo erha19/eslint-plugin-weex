@@ -206,7 +206,7 @@ tester.run('valid-image-component', rule, {
         <div class="wrapper">
           <image style="height:96px; width:96px;" :src="successIcon"></image>
           <image style="height:100px; width:100px" :src="logo" class="logo"></image>
-          <image :src="logo" class="logo"></image>
+          <image :src="logo" :class="logo"></image>
           <image style="height:96px; width:96px;" :src="successIcon"></image>
         </div>
       </template>`
@@ -249,6 +249,30 @@ tester.run('valid-image-component', rule, {
       </div>
     </template>`,
       errors: ['The style attributes of width and height must be specified in image component, otherwise it won’t work.']
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+      <div class="wrapper">
+        <image style="height:96px;" :src="successIcon"></image>
+        <image style="height:100px; width:100px" :src="logo" class="logo"></image>
+        <image :src="logo" class="logo"></image>
+        <image style="height:96px;" :src="successIcon"></image>
+      </div>
+    </template>`,
+      errors: [{
+        message: 'The style attributes of width must be specified in image component, otherwise it won’t work.',
+        line: 3,
+        column: 9
+      },{
+        message: 'The style attributes of width and height must be specified in image component, otherwise it won’t work.',
+        line: 5,
+        column: 9
+      },{
+        message: 'The style attributes of width must be specified in image component, otherwise it won’t work.',
+        line: 6,
+        column: 9
+      }]
     }
   ]
 })
