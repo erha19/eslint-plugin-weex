@@ -43,8 +43,17 @@ tester.run('valid-style-root', rule, {
   invalid: [
     {
       filename: 'test.vue',
-      code: '<template></template><style></style>',
-      errors: ['The style root requires scoped attribute.']
+      code: `
+      <template></template>
+      <style></style>
+      `,
+      errors: [{
+        message:'The style root requires scoped attribute.',
+        line: 3,
+        column: 7,
+        endColumn: 21,
+        endLine: 3
+      }]
     }
   ]
 })
